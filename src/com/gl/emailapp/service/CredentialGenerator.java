@@ -16,7 +16,7 @@ public class CredentialGenerator {
     //method to create an email ID for an object of class employee
     public void generateEmailID (){
         String dept = deptShortName();
-        String emailID = employee.getFirstName().toLowerCase()+"."+employee.getLastName().toLowerCase()+"@"+dept+".gl.com";
+        String emailID = employee.getFirstName().toLowerCase()+employee.getLastName().toLowerCase()+"@"+dept+".gl.com";
         employee.setEmail(emailID);
     }
 
